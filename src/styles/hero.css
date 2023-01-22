@@ -37,7 +37,7 @@
   }
   .all__foods-btn {
     background: transparent;
-    border: 1px solid chocolate !important;
+   /*border: 1px solid chocolate !important;*/
   }
   
   .all__foods-btn a {
