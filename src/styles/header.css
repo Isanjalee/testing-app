@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 80px;
+    height: 100px;
     line-height: 100px;
   }
   
@@ -10,14 +10,15 @@
   .logo img {
     width: calc(100% - 70%);
     object-fit: contain;
-    margin-top: -10px;
+    margin-top: 5px;
+   
   }
   
   .logo h5 {
     font-weight: 600;
     font-size: 1rem;
     color: #0c0e53;
-    margin-top: -30px;
+    margin-top: -10px;
     margin-bottom: 0;
   }
   
@@ -42,6 +43,8 @@
     font-size: 1.3rem;
     color: #0c0e53;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
   
   .cart__icon {
@@ -73,9 +76,9 @@
     position: sticky;
     top: 0;
     left: 0;
-    background: #fff;
+    background: rgb(255, 255, 255);
     z-index: 99999;
-    box-shadow: 5px 5px 15px -5px #fde4e4;
+    box-shadow: 5px 5px 15px -5px #d38912b2;
   }
   
   @media only screen and (max-width: 992px) {

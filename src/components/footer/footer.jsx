@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import logo from "../../Assets/Images/res-logo1.png";
+import logo from "../../Assets/images/logo2.png";
 
 import "../../styles/footer.css";
 

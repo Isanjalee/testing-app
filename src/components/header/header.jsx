@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useRef, useEffect } from "react";
 
 import { Container } from "reactstrap";
-import logo from "../../Assets/Images/res-logo1.png";
+import logo from "../../Assets/images/logo2.png";
 import { NavLink, Link } from "react-router-dom";
 
 import "../../styles/header.css";
@@ -28,14 +29,33 @@ const nav__links = [
 const header = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const menuRef = useRef(null);
+  const headerRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("header__shrink");
+      } else {
+        headerRef.current.classList.remove("header__shrink");
+      }
+    });
+
+    return () => window.removeEventListener("scroll");
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
       <Container>
         <div className="nav__wrapper d-flex align-items-center justify-content-between ">
-          <div className="logo">
+          <div className="logo w-25 mt-1  d-flex justify-content-between">
             <img src={logo} alt="logo" />
-            <h5>Eat Enjoy EveryDay!!</h5>
+            {/*<h5 className="mt-2 d-flex align-items-center justify-content-between">
+              Eat Enjoy EveryDay!!
+  </h5>*/}
           </div>
 
           {/*========================MENU========================= */}
