@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import logo from "../../Assets/Images/res-logo.png";
+import logo from "../../Assets/Images/res-logo1.png";
 
 import "../../styles/footer.css";
 
@@ -41,10 +41,10 @@ const Footer = () => {
             <h5 className="footer__title">Contact</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <p>Location: ZindaBazar, Sylhet-3100, Bangladesh</p>
+                <p>Location: No. 332, Main Road, Malikaikadu, Sainthamaruthu</p>
               </ListGroupItem>
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Phone: 01712345678</span>
+                <span>Phone: +94 117 777 777</span>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
@@ -54,8 +54,8 @@ const Footer = () => {
           </Col>
 
           <Col lg="3" md="4" sm="6">
-            <h5 className="footer__title">Newsletter</h5>
-            <p>Subscribe our newsletter</p>
+            <h5 className="footer__title">News-Service</h5>
+            <p>Subscribe our News-Service</p>
             <div className="newsletter">
               <input type="email" placeholder="Enter your email" />
               <span>

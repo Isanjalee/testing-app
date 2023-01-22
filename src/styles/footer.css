@@ -13,11 +13,12 @@
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 15px;
+    color: #0c0e53;
   }
   
   .footer__logo p {
     font-size: 0.9rem;
-    color: #333;
+    color: rgba(24, 13, 99, 0.618);
     line-height: 28px;
   }
   
@@ -28,21 +29,21 @@
   .delivery__time-item span {
     font-weight: 600;
     font-size: 1rem;
-    color: #212245;
+    color: #0c0e53;
   }
   
   .delivery__time-item p {
-    color: #212245;
+    color: #0c0e53;
   }
   .footer__title {
     font-size: 1.1rem;
-    color: #212245;
+    color: #0c0e53;
     font-weight: 600;
   }
   
   .newsletter {
     padding: 5px;
-    border: 1px solid #212245;
+    border: 1px solid #0c0e53;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -60,8 +61,8 @@
   }
   
   .newsletter span {
-    background: #df2020;
-    padding: 5px 30px;
+    background: chocolate;
+    padding: 5px 20px;
     border-radius: 5px;
   }
   
@@ -70,19 +71,19 @@
   }
   
   .newsletter input::placeholder {
-    color: #212245;
+    color: #0c0e53;
   }
   
   .social__links span i {
     padding: 5px;
-    background: #df2020;
+    background: chocolate;
     color: #fff;
     border-radius: 50%;
   }
   
   .copyright__text {
     font-size: 0.8rem;
-    color: #df2020;
+    color:chocolate;
   }
   
   @media only screen and (max-width: 992px) {

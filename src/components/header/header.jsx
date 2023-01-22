@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import { Container } from "reactstrap";
-import logo from "../../Assets/Images/res-logo.png";
+import logo from "../../Assets/Images/res-logo1.png";
 import { NavLink, Link } from "react-router-dom";
 
 import "../../styles/header.css";
@@ -26,6 +26,9 @@ const nav__links = [
 ];
 
 const header = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const menuRef = useRef(null);
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
     <header className="header">
       <Container>
@@ -36,7 +39,7 @@ const header = () => {
           </div>
 
           {/*========================MENU========================= */}
-          <div className="navigation">
+          <div className="navigation " ref={menuRef} onClick={toggleMenu}>
             <div className="menu d-flex align-items-center gap-5">
               {nav__links.map((item, index) => (
                 <NavLink
@@ -63,7 +66,7 @@ const header = () => {
                 <i class="ri-user-5-line"></i>
               </Link>
             </span>
-            <span className="mobile__menu">
+            <span className="mobile__menu" onClick={toggleMenu}>
               <i class="ri-menu-line"></i>
             </span>
           </div>
