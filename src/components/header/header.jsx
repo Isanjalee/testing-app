@@ -5,6 +5,13 @@ import { Container } from "reactstrap";
 import logo from "../../Assets/images/logo2.png";
 import { NavLink, Link } from "react-router-dom";
 
+import { useSelector, useDispatch } from "react-redux";
+
+import {
+  cartActions,
+  cartUiActions,
+} from "../../store/shopping-cart/cartUiSlice";
+
 import "../../styles/header.css";
 
 const nav__links = [
@@ -30,7 +37,14 @@ const header = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const menuRef = useRef(null);
   const headerRef = useRef(null);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+  const dispatch = useDispatch();
+
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
+  const toggleCart = () => {
+    dispatch(cartUiActions.toggle());
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -77,9 +91,9 @@ const header = () => {
 
           {/*========================NAV RIGHT ICONS========================= */}
           <div className="nav__right d-flex align-items-center gap-4">
-            <span className="cart__icon">
+            <span className="cart__icon" onClick={toggleCart}>
               <i class="ri-shopping-cart-2-fill"></i>
-              <span className="cart__badge">2</span>
+              <span className="cart__badge">{totalQuantity}</span>
             </span>
             <span className="user">
               <Link to="/login">

@@ -2,14 +2,19 @@ import React from "react";
 
 import Header from "../header/header.jsx";
 import Footer from "../footer/footer.jsx";
-import Routes from "../../routes/routers.js";
+import Routes from "../../routes/routers";
 
-import "../../styles/header.css";
+import Carts from "../UI/cart/Carts.jsx";
+import { useSelector } from "react-redux";
 
-const layout = () => {
+const Layout = () => {
+  const showCart = useSelector((state) => state.cartUi.cartIsVisible);
   return (
     <div>
       <Header />
+
+      {showCart && <Carts />}
+
       <div>
         <Routes />
       </div>
@@ -18,4 +23,4 @@ const layout = () => {
   );
 };
 
-export default layout;
+export default Layout;
