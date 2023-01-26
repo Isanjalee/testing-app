@@ -53,9 +53,7 @@ const header = () => {
         document.documentElement.scrollTop > 80
       ) {
         headerRef.current.classList.add("header__shrink");
-      } else {
-        headerRef.current.classList.remove("header__shrink");
-      }
+      } else return headerRef.current.classList.remove("header__shrink");
     });
 
     return () => window.removeEventListener("scroll");
