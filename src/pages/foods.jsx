@@ -1,21 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 
-// import React from "react";
-// import { useParams } from "react-router-dom";
-// import products from "../Assets/Deatils/products";
-// import Helmet from "../components/helmet/helmet";
-// import CommonSection from "../components/UI/common-section/CommonSection";
-// import ReactPaginate from "react-paginate";
-
-// //import Helmet from "../components/helmet/helmet";
-// //import CommonSection from "../components/UI/common-section/CommonSection";
-// import { Container, Row, Col } from "reactstrap";
-// import { ProductCard } from "../components/UI/product-card/ProductCard.jsx";
-
-// import "../styles/product-details.css";
-
-// import productImg from "../Assets/images/product_2.1.jpg";
-
 import React, { useState, useEffect } from "react";
 
 import products from "../Assets/Deatils/products";
@@ -40,8 +24,8 @@ const foods = () => {
 
   const dispatch = useDispatch();
 
-  const product = products.find((product) => products.id === id);
-  const [previewImg, setPreviewImg] = useState(products.image01);
+  const product = products.find((product) => product.id === id);
+  const [previewImg, setPreviewImg] = useState(product.image01);
   const { title, price, category, desc, image01 } = products;
 
   const relatedProduct = products.filter((item) => category === item.category);
