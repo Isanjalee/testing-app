@@ -2,10 +2,10 @@ import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
 
-import categoryImage01 from "../../../Assets/images/category-01.png";
-import categoryImage02 from "../../../Assets/images/category-02.png";
-import categoryImage03 from "../../../Assets/images/category-03.png";
-import categoryImage04 from "../../../Assets/images/category-04.png";
+import categoryImage01 from "../../../Assets/Images/category-01.png";
+import categoryImage02 from "../../../Assets/Images/category-02.png";
+import categoryImage03 from "../../../Assets/Images/category-03.png";
+import categoryImage04 from "../../../Assets/Images/category-04.png";
 
 import "../../../styles/categorey.css";
 

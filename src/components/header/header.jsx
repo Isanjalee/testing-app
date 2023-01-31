@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 
 import { Container } from "reactstrap";
-import logo from "../../Assets/images/logo2.png";
+import logo from "../../Assets/Images/logo2.png";
 import { NavLink, Link } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
@@ -70,7 +70,7 @@ const header = () => {
   </h5>*/}
           </div>
 
-          {/*========================MENU========================= */}
+          {/*========================MENU=========================*/}
           <div className="navigation " ref={menuRef} onClick={toggleMenu}>
             <div className="menu d-flex align-items-center gap-5">
               {nav__links.map((item, index) => (
@@ -90,16 +90,16 @@ const header = () => {
           {/*========================NAV RIGHT ICONS========================= */}
           <div className="nav__right d-flex align-items-center gap-4">
             <span className="cart__icon" onClick={toggleCart}>
-              <i class="ri-shopping-cart-2-fill"></i>
+              <i className="ri-shopping-cart-2-fill"></i>
               <span className="cart__badge">{totalQuantity}</span>
             </span>
             <span className="user">
               <Link to="/login">
-                <i class="ri-user-5-line"></i>
+                <i className="ri-user-5-line"></i>
               </Link>
             </span>
             <span className="mobile__menu" onClick={toggleMenu}>
-              <i class="ri-menu-line"></i>
+              <i className="ri-menu-line"></i>
             </span>
           </div>
         </div>

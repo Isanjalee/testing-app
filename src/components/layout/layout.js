@@ -13,6 +13,9 @@ const Layout = () => {
     <div>
       <Header />
 
+
+      
+
       {showCart && <Carts />}
 
       <div>

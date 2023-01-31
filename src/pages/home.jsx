@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import Helmet from "../components/helmet/helmet";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import HeroImg from "../Assets/images/hero2.png";
+import HeroImg from "../Assets/Images/hero2.png";
 
 import "../styles/hero.css";
 import "../styles/home.css";
@@ -12,20 +12,20 @@ import { Link } from "react-router-dom";
 
 import Category from "../components/UI/category/Category";
 
-import featureImage01 from "../Assets/images/service-01.png";
-import featureImage02 from "../Assets/images/service-02.png";
-import featureImage03 from "../Assets/images/service-03.png";
+import featureImage01 from "../Assets/Images/service-01.png";
+import featureImage02 from "../Assets/Images/service-02.png";
+import featureImage03 from "../Assets/Images/service-03.png";
 
 import products from "../Assets/Deatils/products";
 
-import foodCategoryImg01 from "../Assets/images/hamburger.png";
-import foodCategoryImg02 from "../Assets/images/pizza.png";
-import foodCategoryImg03 from "../Assets/images/bread.png";
+import foodCategoryImg01 from "../Assets/Images/hamburger.png";
+import foodCategoryImg02 from "../Assets/Images/pizza.png";
+import foodCategoryImg03 from "../Assets/Images/bread.png";
 
 import { ProductCard } from "../components/UI/product-card/ProductCard";
 
-import whyImage from "../Assets/images/location2.png";
-import networkImg from "../Assets/images/network2.png";
+import whyImage from "../Assets/Images/location2.png";
+import networkImg from "../Assets/Images/network2.png";
 
 import TestimonialSlider from "../components/UI/slider/TestmonialSlider";
 
@@ -94,7 +94,7 @@ const home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <div className="hero__content">
+              <div className="hero__content"> 
                 <h5 className="mb-3">Easy way to make Your ORDER!!</h5>
                 <h1 className="mb-4 hero__title">
                   <span>HUNGRY?</span> Just wait
@@ -107,7 +107,7 @@ const home = () => {
                 </p>
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
                   <button className="order__btn d-flex align-items-center justify-content-between">
-                    Order Now<i class="ri-arrow-right-s-line"></i>
+                    Order Now<i className="ri-arrow-right-s-line"></i>
                   </button>
                   <button>
                     <Link className="all__foods-btn" to="/all">
@@ -118,13 +118,13 @@ const home = () => {
                 <div className="hero__service d-flex align-items-center gap-5 mt-5">
                   <p className="d-flex align-items-center gap-2">
                     <span className="shipping__icon">
-                      <i class="ri-roadster-line"></i>
+                      <i className="ri-roadster-line"></i>
                     </span>
                     No delivery charges
                   </p>
                   <p className="d-flex align-items-center gap-2">
                     <span className="shipping__icon">
-                      <i class="ri-shield-check-line"></i>
+                      <i className="ri-shield-check-line"></i>
                     </span>
                     100% secure checkout
                   </p>
@@ -255,7 +255,7 @@ const home = () => {
                 <ListGroup className="mt-5">
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose__us-title d-flex align-items-center gap-2">
-                      <i class="ri-check-double-line"></i>
+                      <i className="ri-check-double-line"></i>
                       Fresh and tasty foods
                     </p>
                     <p className="choose__us-desc">
@@ -266,7 +266,7 @@ const home = () => {
                   </ListGroupItem>
                   <ListGroupItem className="border-0 ps-0">
                     <p className=" choose__us-title d-flex align-items-center gap-2">
-                      <i class="ri-check-double-line"></i>
+                      <i className="ri-check-double-line"></i>
                       Quality Support
                     </p>
                     <p className="choose__us-desc">
@@ -277,7 +277,7 @@ const home = () => {
                   </ListGroupItem>
                   <ListGroupItem className="border-0 ps-0">
                     <p className=" choose__us-title d-flex align-items-center gap-2">
-                      <i class="ri-check-double-line"></i>
+                      <i className="ri-check-double-line"></i>
                       Order from any place
                     </p>
                     <p className="choose__us-desc">

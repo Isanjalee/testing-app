@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
-import ava01 from "../../../Assets/images/ava-2.jpg";
-import ava02 from "../../../Assets/images/ava-3.jpg";
-import ava03 from "../../../Assets/images/ava-4.jpg";
+import ava01 from "../../../Assets/Images/ava-3.jpg";
+import ava02 from "../../../Assets/Images/ava-3.jpg";
+import ava03 from "../../../Assets/Images/ava-4.jpg";
 
 import "../../../styles/slider.css";
 

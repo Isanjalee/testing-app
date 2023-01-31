@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Helmet from "../components/helmet/helmet";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import contactimg from "../Assets/images/contact1.png";
+import contactimg from "../Assets/Images/contact1.png";
 
 import "../styles/hero.css";
 import "../styles/contact.css";
@@ -18,7 +18,7 @@ const Contact = () => {
           <Row>
             <Col lg="6" md="6">
               <form className="form gap-4">
-                <div class="form__group">
+                <div className="form__group">
                   <input type="text" name="name" placeholder="Name" />
                   <br />
 
@@ -33,7 +33,7 @@ const Contact = () => {
                   ></textarea>
                   <br />
 
-                  <div class="button">
+                  <div className="button">
                     <button
                       type="submit"
                       className="addTOCart__btn align-items-center"

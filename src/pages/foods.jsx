@@ -25,8 +25,8 @@ const foods = () => {
   const dispatch = useDispatch();
 
   const product = products.find((product) => product.id === id);
-  const [previewImg, setPreviewImg] = useState(product.image01);
-  const { title, price, category, desc, image01 } = products;
+  const [previewImg, setPreviewImg] = useState("");
+  const { title, price, category, desc, image01, image02, image03 } = product;
 
   const relatedProduct = products.filter((item) => category === item.category);
 
@@ -48,7 +48,7 @@ const foods = () => {
   };
 
   useEffect(() => {
-    setPreviewImg(products.image01);
+    setPreviewImg(image01);
   }, [product]);
 
   useEffect(() => {
@@ -66,22 +66,22 @@ const foods = () => {
               <div className="product__images ">
                 <div
                   className="img__item mb-3"
-                  onClick={() => setPreviewImg(products.image01)}
+                  onClick={() => setPreviewImg(image01)}
                 >
-                  <img src={products.image01} alt="" className="w-50" />
+                  <img src={image01} alt="" className="w-50" />
                 </div>
                 <div
                   className="img__item mb-3"
-                  onClick={() => setPreviewImg(products.image02)}
+                  onClick={() => setPreviewImg(image02)}
                 >
-                  <img src={products.image02} alt="" className="w-50" />
+                  <img src={image02} alt="" className="w-50" />
                 </div>
 
                 <div
                   className="img__item"
-                  onClick={() => setPreviewImg(products.image03)}
+                  onClick={() => setPreviewImg(image03)}
                 >
-                  <img src={products.image03} alt="" className="w-50" />
+                  <img src={image03} alt="" className="w-50" />
                 </div>
               </div>
             </Col>

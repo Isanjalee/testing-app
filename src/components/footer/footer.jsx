@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import logo from "../../Assets/images/logo2.png";
+import logo from "../../Assets/Images/logo2.png";
 
 import "../../styles/footer.css";
 
@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="newsletter">
               <input type="email" placeholder="Enter your email" />
               <span>
-                <i class="ri-send-plane-line"></i>
+                <i className="ri-send-plane-line"></i>
               </span>
             </div>
           </Col>
@@ -78,27 +78,27 @@ const Footer = () => {
               <span>
                 {" "}
                 <Link to="https://www.facebook.com">
-                  <i class="ri-facebook-line"></i>
+                  <i className="ri-facebook-line"></i>
                 </Link>{" "}
               </span>
 
               <span>
                 <Link to="https://github.com">
-                  <i class="ri-github-line"></i>
+                  <i className="ri-github-line"></i>
                 </Link>
               </span>
 
               <span>
                 {" "}
                 <Link to=" https://www.youtube.com/">
-                  <i class="ri-youtube-line"></i>
+                  <i className="ri-youtube-line"></i>
                 </Link>{" "}
               </span>
 
               <span>
                 {" "}
                 <Link to=" https://www.linkedin.com/in/muhib160/">
-                  <i class="ri-linkedin-line"></i>
+                  <i className="ri-linkedin-line"></i>
                 </Link>{" "}
               </span>
             </div>
